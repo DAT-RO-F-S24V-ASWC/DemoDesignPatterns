@@ -2,21 +2,18 @@
 
 
 using DemoDesignPatterns;
-
-
-DesignWorkerTemplate dworker = new DesignWorkerTemplate();
-dworker.Start();
-
-
-
-
-
-
-
+using DemoDesignPatterns.Comments;
 
 /*
-CommentWorker cworker = new CommentWorker();
+DesignWorkerTemplate dworker = new DesignWorkerTemplate();
+dworker.Start();
 */
+
+CommentWorker cworker = new CommentWorker();
+int res = cworker.SomeSillyMethod(7, "3");
+
+Console.WriteLine(res);
+
 
 
 

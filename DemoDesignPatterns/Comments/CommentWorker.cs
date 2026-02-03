@@ -6,9 +6,21 @@ using System.Threading.Tasks;
 
 namespace DemoDesignPatterns.Comments
 {
+    /// <summary>
+    /// Dette er en fjollet klasse
+    /// </summary>
     public class CommentWorker
     {
 
+        /// <summary>
+        /// Denne metoder er lidt sjov ganger x med n
+        /// </summary>
+        /// <param name="x">Et heltal der skal ganges</param>
+        /// <param name="n">En string hvor kun '2' og '3' er lovlige</param>
+        /// <returns>værdien x ganget med 2 hhv 3 afh af n</returns>
+        /// <exception cref="ArgumentNullException">HVis der ikke er en værdi i strengen n</exception>
+        /// <exception cref="ArgumentException">værdien i n er ikke 2 eller 3</exception>
+        /// <exception cref="NotImplementedException">Dummy</exception>
         public int SomeSillyMethod(int x, String n)
         {
             if (string.IsNullOrWhiteSpace(n)) throw new ArgumentNullException("n must have a value but was null or empty");
