@@ -17,10 +17,10 @@ Console.WriteLine(res);
 */
 
 
-ConfigReaderWorker confworker = new ConfigReaderWorker();
-confworker.StartReadConfigfile(@"M:\uv\2026f-ASWC\prog\DemoDesignPatterns\DemoDesignPatterns\Configuration\Config.xml");
+//ConfigReaderWorker confworker = new ConfigReaderWorker();
+//confworker.StartReadConfigfile(@"M:\uv\2026f-ASWC\prog\DemoDesignPatterns\DemoDesignPatterns\Configuration\Config.xml");
 
-//LoggerWorker lworker = new LoggerWorker();
-//lworker.StartLoggerService();
+LoggerWorker lworker = new LoggerWorker();
+lworker.StartLoggerService();
 
 
